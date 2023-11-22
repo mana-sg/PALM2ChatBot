@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { Container, Flex } from "@chakra-ui/react";
 
 const ChatPage = () => {
-  const [text, setText] = useState("");
-  const fetchResponse = async () => {
-    const response = await fetch(`http://localhost:8080/request/${text}`);
-  };
-
-  return <div>ChatPage</div>;
+  return (
+    <Container maxW={"full"} centerContent>
+      <Flex>ChatBot</Flex>
+    </Container>
+  );
 };
 
 export default ChatPage;
